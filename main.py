@@ -22,7 +22,7 @@ for i in range (start,end + 1):
         # Add Text to an image
         I1.text((100, 450), "{0:04d}".format(i), font=myFontB, fill=(0, 0, 0))
 
-
+        # Create a new image, add the text on a transparent background, rotate the "new image" and paste it onto the original image
         img2 = Image.new("RGBA", (650,260), (0, 0 ,0, 0))
         I2 = ImageDraw.Draw(img2)
         I2.text((30,0),"{0:04d}".format(i), font=myFontS, fill=(0,0,0))
